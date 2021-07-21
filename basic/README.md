@@ -2,7 +2,7 @@
 
 ### ex00: create-react-app(cra) 애플리케이션 만들어보기
 
-### ex01: 전통적인 DOM API 기반의 애플리케이션
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex00">ex01: 전통적인 DOM API 기반의 애플리케이션 </a>
 
 ### ex02: 애플리케이션 분리1
 
