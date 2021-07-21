@@ -1,6 +1,6 @@
 ## React Practices
 
-### 1. 기본개념( Basic )
+<a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic"> ### 1. 기본개념( Basic ) </a>
 
 <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic"> link </a>
 
