@@ -8,7 +8,7 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex03">ex03: 애플리케이션 분리2: ES6 모듈 시스템 </a>
 
-### ex04: 애플리케이션 번들링: webpack
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex04">ex04: 애플리케이션 번들링: webpack</a>
 
 ### ex05: React(API 기반) 애플리케이션으로 리팩토링
 
