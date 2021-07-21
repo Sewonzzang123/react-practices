@@ -3,5 +3,3 @@ const App = function () {
   app.textContent = "hello world";
   return app;
 };
-
-document.getElementById("root").appendChild(App());
