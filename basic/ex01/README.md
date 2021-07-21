@@ -30,7 +30,7 @@
   "name": "ex01",
   "version": "1.0.0",
   "description": "",
-  "type": "module", es6 system을 사용한다. (require을 사용하면 안돼)
+  "type": "module", //es6 system을 사용한다. (require을 사용하면 안돼)
   "main": "index.js",
   "scripts": {
     "start": "node dev-server",
