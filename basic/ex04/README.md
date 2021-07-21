@@ -93,13 +93,13 @@ document.getElementById("root").appendChild(App());
 5. 빌드(번들링)
    (package.json에서 type:'module'이 없어야 되네)
 
-- bash
+- 1. bash
 
 ```bash
 [../basic/ex04] $ npx webpack ./src/index.js -o ./public
 ```
 
-- package.json
+- 2. package.json
 
 ```json
 "build": "npx webpack ./src/index.js -o ./public"
