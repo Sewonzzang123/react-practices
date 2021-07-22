@@ -1,6 +1,6 @@
 ## webpack-practices : ex06
 
-<a href="https://velog.io/@adam2/webpack-dev-server-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%EC%82%BD%EC%A7%88%ED%9B%84%EA%B8%B0">참고하기</a>
+image file
 
 프로젝트 생성
 
@@ -35,42 +35,24 @@
 webpack.config.js
 
 ```javascript
-const path = require("path");
 
-module.exports = {
-  entry: path.resolve("src/index.js"),
-  output: {
-    path: path.resolve("public"),
-    filename: "bundle.js",
-  },
-  module: {
-    rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.s[ac]ss$/i, //sass, scss
+        test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.svg$/i,
-        use: "file-loader",
-        options: { outputPath: "assets/images", name: "[name].[ext]" },
+        loader: "file-loader",
+        options: {
+          outputPath: "/assets/images",
+          name: "[name].[ext]",
+        },
       },
-    ],
-  },
-  devServer: {
-    contentBase: path.resolve("public"),
-    host: "0.0.0.0",
-    port: 9999,
-    inline: true,
-    liveReload: true,
-    hot: false,
-    compress: true,
-    historyApiFallback: true,
-  },
-};
+
 ```
 
 빌드
