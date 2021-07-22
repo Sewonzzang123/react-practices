@@ -33,11 +33,11 @@
       |--- /node_modules
       |--- /public
       |         |--- index.html
-      |         |--- bundle.js
+      |         |--- main.js
       |--- /src
       |         |--- index.js
       |         |--- App.js
-      |--- dev-server.js
+      |--- dev-server.mjs
 </pre>
 
 3. scripts
