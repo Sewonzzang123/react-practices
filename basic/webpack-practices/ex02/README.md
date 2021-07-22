@@ -3,14 +3,14 @@
 프로젝트 생성
 
 ```bash
-[..\basic\webpack-practices\ex01] $ npm init -y
-[..\basic\webpack-practices\ex01] $ npm i -D webpack webpack-cli express
+[..\basic\webpack-practices\ex02] $ npm init -y
+[..\basic\webpack-practices\ex02] $ npm i -D webpack webpack-cli express
 ```
 
 디렉토리
 
 <pre>
-    /ex01
+    /ex02
       |--- package.json
       |--- package-lock.json
       |--- /node_modules
@@ -38,8 +38,26 @@ module.exports = {
 };
 ```
 
-[..\basic\webpack-practices\ex01] $ npx webpack
+빌드
+
+```bash
+[..\basic\webpack-practices\ex02] $ npx webpack
+```
 
 webpack.config.js의 output 섹션에 지정된 public/bundle.js 로 번들링 됨.
 
-[..\basic\webpack-practices\ex01] $ node dev-server.mjs
+실행
+
+```bash
+[..\basic\webpack-practices\ex02] $ node dev-server.mjs
+```
+
+package.json
+
+```json
+  "scripts": {
+    "start": "node dev-server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
+  },
+```
