@@ -1,4 +1,4 @@
-## ex06: React(JSX 기반) 애플리케이션으로 리팩토링 : babel (transpile)
+## ex07: CRA로 만든 Application 직접 설정해서 만들어 보기
 
 1. 프로젝트 생성
 
@@ -14,7 +14,7 @@
 2. 프로젝트 디렉토리
 
 <pre>
-    /ex06
+    /ex07
       |--- package.json
       |--- package-lock.json
       |--- /node_modules
