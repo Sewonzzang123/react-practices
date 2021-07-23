@@ -8,7 +8,7 @@ npm i -D @babel/core @babel/cli
 
 2.  소스 파일 작성(ES6)
 
-## 적용해보기
+## 플러그인 적용해보기
 
 1. 블록 스코프 변수 변환(@babel/plugin-transform-block-scoping)
 
