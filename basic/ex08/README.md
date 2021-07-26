@@ -1,6 +1,6 @@
 ## ex08: JSX Tutorials
 
-<a href="https://babeljs.io/repl">참고</a>
+<a href="https://babeljs.io/repl">babel compiler</a>
 
 <a href="https://github.com/Sewonzzang123/frontend-dev/tree/master/javascript-practices/es6">es6</a>
 
@@ -22,7 +22,7 @@ src/04 (index, App, Header, Content)
 
 ### 05. 클래스 컴포넌트 작성하기
 
-src/05
+src/05 03이랑 비교
 
 ### 06. 특징3 : JSX 표현식 표기법 { _expression_ } 문제점 : if-statement
 
