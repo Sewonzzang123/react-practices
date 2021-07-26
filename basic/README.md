@@ -16,6 +16,8 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex07">ex07: ex00(CRA ver) Reconfiguration</a>
 
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex08">ex08: JSX Tutorials </a>
+
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/webpack-practices">webpack-practices</a>
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/babel-practices">babel-practices</a>

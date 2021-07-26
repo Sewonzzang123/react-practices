@@ -12,7 +12,7 @@ module.exports = {
         test: /\.css$/i,
         use: [
           "style-loader",
-          { loader: "css-loader", option: { modules: true } },
+          { loader: "css-loader", options: { modules: true } },
         ],
       },
       {
