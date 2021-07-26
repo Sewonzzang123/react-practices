@@ -14,7 +14,7 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex06">ex06: React(JSX 기반) 애플리케이션으로 리팩토링 : babel (transpile)</a>
 
-### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex07">ex07: React 기본개념</a>
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/ex07">ex07: ex00(CRA ver) Reconfiguration</a>
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic/webpack-practices">webpack-practices</a>
 

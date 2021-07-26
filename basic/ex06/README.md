@@ -1,4 +1,4 @@
-## ex06: React(JSX 기반) 애플리케이션으로 리팩토링 : babel (transpile)
+## ex07
 
 1. 프로젝트 생성
 
@@ -6,15 +6,14 @@
 [../basic] $ mkdir ex07
 [../basic] $ cd ex07
 [../basic/ex07] $ npm init -y
-[../basic/ex07] $ npm  -D webpack webpack-cli webpack-dev-server react react-dom
-[../basic/ex07] $ @babel/core @babel/preset-env @babel/preset-react babel-loader (ES6 -> ES5)
-
+[../basic/ex07] $ npm i -D webpack webpack-cli webpack-dev-server react react-dom
+[../basic/ex07] $ @babel/core @babel/preset-env @babel/preset-react @babel/cli babel-loader (ES6 -> ES5)
 ```
 
 2. 프로젝트 디렉토리
 
 <pre>
-    /ex06
+    /ex07
       |--- package.json
       |--- package-lock.json
       |--- /node_modules

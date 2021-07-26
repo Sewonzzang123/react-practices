@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   entry: path.resolve("src/index.js"),
@@ -19,6 +20,19 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(svg|jpe?g|gif|png|tiff?|bmp|ico)$/i,
+        loader: "file-loader",
+        options: {
+          outputPath: "/assets/images",
+          name: "[name].[ext]",
+        },
+      },
+      {
+        test: /\.js$/i,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
     ],
   },
   devServer: {
@@ -31,4 +45,9 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
   },
+  /*plugins: [
+    new webpack.ProvidePlugin({
+      React: "react",
+    }),
+  ],*/
 };

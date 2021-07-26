@@ -8,7 +8,7 @@
 [../basic/ex07] $ npm init -y
 [../basic/ex07] $ npm  -D webpack webpack-cli webpack-dev-server react react-dom
 [../basic/ex07] $ @babel/core @babel/preset-env @babel/preset-react babel-loader (ES6 -> ES5)
-
+npm i -D file-loader style-loader css-loader web-vitals sass-loader image-loader
 ```
 
 2. 프로젝트 디렉토리
@@ -78,21 +78,4 @@ bash
 
 ```bash
 [../basic/ex07] $ npx webpack serve --progress
-```
-
-App.js
-
-```javascript
-import React from "react";
-
-const App = function () {
-  const message = "hello world";
-  return (
-    <div>
-      <h1>{message}</h1>
-    </div>
-  );
-};
-
-export default App;
 ```
