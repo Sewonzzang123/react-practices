@@ -2,6 +2,8 @@
 
 <a href="https://babeljs.io/repl">참고</a>
 
+<a href="https://github.com/Sewonzzang123/frontend-dev/tree/master/javascript-practices/es6">es6</a>
+
 ### <a href="https://github.com/Sewonzzang123/react-practices/blob/main/basic/ex08/src/01/App.js">01. 특징1 : HTML과의 차이점 </a>
 
 src/01
@@ -12,11 +14,11 @@ src/02
 
 ### 03. JSX로 함수 컴포넌트 작성하기
 
-src/03
+src/03 (Header, Content)
 
 ### 04. Pure React(React API)로 함수 컴포넌트 작성
 
-src/04
+src/04 (index, App, Header, Content)
 
 ### 05. 클래스 컴포넌트 작성하기
 
