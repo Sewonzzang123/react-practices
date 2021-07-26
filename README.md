@@ -2,7 +2,7 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/basic"> 1. 기본개념( Basic ) </a>
 
-### 2. 컴포넌트 ( Component )
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component">2. 컴포넌트 ( Component )</a>
 
 ### 3. 라우팅 ( Routing )
 
