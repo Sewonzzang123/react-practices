@@ -2,11 +2,11 @@
 
 <a href="https://babeljs.io/repl">참고</a>
 
-### 01. 특징1 : HTML과의 차이점
+### <a href="https://github.com/Sewonzzang123/react-practices/blob/main/basic/ex08/src/01/App.js">01. 특징1 : HTML과의 차이점 </a>
 
 src/01
 
-### 02. 특징2 : Single Root Node
+### <a href="https://github.com/Sewonzzang123/react-practices/blob/main/basic/ex08/src/02/App.js"> 02. 특징2 : Single Root Node</a>
 
 src/02
 
