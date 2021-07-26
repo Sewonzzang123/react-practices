@@ -10,7 +10,7 @@ export default function () {
       <p>JSX Tutorial - 특징1 : HTML과의 차이점 </p>
       {/* 1. 속성은 Camel Case */}
       <input type="text" maxLength="10" />
-      {/* 2. Element는 꼭 닫혀야 한다. 
+      {/* 2. Element는 꼭 닫혀야 한다. createElement
         오류) <br><hr><input type="text"><img src="">*/}
       <br />
       <hr />
