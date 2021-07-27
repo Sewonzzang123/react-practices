@@ -26,6 +26,8 @@ src/05 03이랑 비교
 
 ### 06. 특징3 : JSX 표현식 표기법 { _expression_ } 문제점 : if-statement
 
+src/06
+
 ### 07. 특징4: 공백 (Blank Space)
 
 ### 08. Dynamic HTML Rendering
