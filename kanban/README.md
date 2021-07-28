@@ -34,25 +34,54 @@ KanbanBoard.js
 ```
 
 CardList.js
+{ title, cards }
 
 ```javascript
-<Card />
+<div className={"CardList"}>
+  <h1>{title}</h1>
+  {cards.map((card) => (
+    <Card
+      key={card.no}
+      title={card.title}
+      description={card.description}
+      tasks={card.tasks}
+    />
+  ))}
+</div>
 ```
 
 Card.js
+{ title, description, tasks }
 
 ```javascript
-<TaskList />
+<div className="Card">
+  <div className="Card__Title">{title}</div>
+  <div className="Card__Details">
+    {description}
+    <TaskList tasks={tasks} />
+  </div>
+</div>
 ```
 
 TaskList.js
+{ tasks }
 
 ```javascript
-<Task />
+<div className="TaskList">
+  <ul>
+    {tasks.map((task) => (
+      <Task key={task.no} name={task.name} done={task.done} />
+    ))}
+  </ul>
+</div>
 ```
 
 Task.js
+{ name, done }
 
 ```javascript
-.....
+<li className="TaskList__Task">
+  <input type="checkbox" defaultChecked={done} />
+  {name}
+</li>
 ```
