@@ -12,8 +12,8 @@
 
 ### ex06 : State III - Date flow (Data Flow: Down - Top)
 
-### ex07 : Component Lifecycle (AJAX)
-
-### Kanban Board
+### ex07 : Component Lifecycle + AJAX(fetch, axios)
 
 ### Guestbook SPA
+
+### Gallery SPA
