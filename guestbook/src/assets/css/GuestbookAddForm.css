@@ -1,0 +1,30 @@
+.Guestbook__Form {
+  width: 530px;
+  margin: 0 auto;
+}
+.Guestbook__Form input[type="text"],
+.Guestbook__Form input[type="password"],
+.Guestbook__Form textarea,
+.Guestbook__Form input[type="submit"] {
+  display: block;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.Guestbook__Form textarea {
+  resize: none;
+  height: 80px;
+}
+.Guestbook__Form input[type="submit"] {
+  background-color: #fff;
+  padding: 5px 0;
+  font-weight: bold;
+  color: #846b5c;
+  cursor: pointer;
+}
+.Guestbook__Form input[type="submit"]:hover {
+  background-color: #65b791;
+  color: #fff;
+}

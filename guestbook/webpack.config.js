@@ -1,10 +1,9 @@
 const path = require("path");
 
-module.exports = (env) => {
-  const entry = path.resolve(`src/index.js`);
+module.exports = () => {
   return {
     mode: "none",
-    entry: entry,
+    entry: path.resolve(`src/index.js`),
     output: {
       path: path.resolve("public"),
       filename: "bundle.js",
@@ -43,10 +42,5 @@ module.exports = (env) => {
       compress: true,
       historyApiFallback: true,
     },
-    /*plugins: [
-      new webpack.ProvidePlugin({
-        React: "react",
-      }),
-    ],*/
   };
 };

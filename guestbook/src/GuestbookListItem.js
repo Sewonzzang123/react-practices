@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
+import styles from "./assets/scss/GuestbookListItem.scss";
 
 export default function GuestbookListItem({ name, message, regDate }) {
   return (
-    <li className="Guestbook__List__Item">
+    <li className={styles["Guestbook__List__Item"]}>
       <strong>{name}</strong>
       <p>
         {message &&
