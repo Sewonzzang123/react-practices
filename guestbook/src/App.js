@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import Guestbook from "./Guestbook";
 
 export default function App() {
-  return <h1>Guestbook</h1>;
+  return (
+    <div className="App">
+      <Guestbook />
+    </div>
+  );
 }
