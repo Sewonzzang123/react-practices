@@ -18,7 +18,7 @@
 ### Run Examples
 
 ```bash
-[../basic/ex08] $ npm run debug src={no}
+[../component/ex01] $ npm run debug src={no}
 ```
 
 npx webpack serve --progress --mode development --env src=01

@@ -1,13 +1,11 @@
 import React from "react";
 import CardList from "./CardList";
 import cards from "../assets/json/data.json";
+import styles from "../assets/css/KanbanBoard.css";
 
 export default function KanbanBoard() {
   return (
-    // ToDo, Doing, Done
-    // copy파일처럼 하는것 보다는 cards에 바로 넣는게 좋음
-    // filter
-    <div className={"KanbanBoard"}>
+    <div className={styles.KanbanBoard}>
       <CardList
         key="ToDo"
         title={"ToDo"}

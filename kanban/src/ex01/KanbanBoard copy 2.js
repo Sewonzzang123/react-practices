@@ -1,6 +1,6 @@
 import React from "react";
 import CardList from "./CardList";
-import cards from "./data.json";
+import cards from "../assets/json/data.json";
 
 export default function KanbanBoard() {
   console.log(cards);
