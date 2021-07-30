@@ -6,13 +6,13 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component/ex03">ex03 : React Event</a>
 
-### ex04 : State I - Controlled VS Uncontrolled Component
+### ex04 : State
 
-### ex05 : State II - Stateful and Pure Component
+State I - Controlled VS Uncontrolled Component
+State II - Stateful and Pure Component
+State III - Date flow (Data Flow: Down - Top)
 
-### ex06 : State III - Date flow (Data Flow: Down - Top)
-
-### ex07 : Component Lifecycle + AJAX(fetch, axios)
+### ex05 : Component Lifecycle + AJAX(fetch, axios)
 
 ### Guestbook SPA
 
