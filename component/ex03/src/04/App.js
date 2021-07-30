@@ -2,7 +2,8 @@ import React, { Fragment, useRef } from "react";
 import logo from "../assets/images/react-logo.png";
 
 export default function App() {
-  // const imageRef = useRef(null);
+  const imageRef = useRef(null); //여기서는 알수 없어서 null줌, 밑에서 지정해줄것이다.
+
   const onKeyPressInput = function (e) {
     if (e.key == "Enter") {
       console.log(e.target.value);
@@ -20,7 +21,15 @@ export default function App() {
     console.log("onMouseOverImage");
   };
   const onMouseMoveImage = function (e) {
-    console.log("onMouseMoveImage");
+    // $('img').top ...
+    // document.getElementById('image').offsetTop
+    const offsetTop = imageRef.current.offsetTop;
+    const offsetLeft = imageRef.current.offsetLeft;
+
+    console.log(
+      "onMouseMoveImage",
+      `x=${e.clientX - offsetLeft},y=${e.clientY - offsetTop}`
+    );
   };
   const onMouseOutImage = function (e) {
     console.log("onMouseOutImage");
@@ -51,7 +60,7 @@ export default function App() {
       <br />
       <br />
       <img
-        /*ref={ imageRef }*/
+        ref={imageRef}
         style={{
           cursor: "pointer",
           width: 190,
