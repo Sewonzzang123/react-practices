@@ -89,3 +89,4 @@ Task.js
 ex01
 ex02
 ex03 : state
+ex04 : PropTypes $ npm i -D prop-types
