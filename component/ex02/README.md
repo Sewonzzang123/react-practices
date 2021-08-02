@@ -38,6 +38,8 @@ src/07
 
 src/08
 
+### 08. font-awesome
+
 ### Run Examples
 
 ```bash
