@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styles from "../assets/css/Task.css";
+
 export default function Task({ name, done }) {
   const [finished, setFinished] = useState(done);
+
   return (
     <li className={styles.TaskList__Task}>
       <input
