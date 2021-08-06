@@ -18,7 +18,7 @@ State I - Controlled VS Uncontrolled Component
 State II - Stateful and Pure Component
 State III - Date flow (Data Flow: Down - Top)
 
-### ex05 : Component Lifecycle + AJAX(fetch, axios)
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component/ex04">ex05 : Component Lifecycle + AJAX(fetch, axios)</a>
 
 ### ex01~ ex05 AJAX( fetch, axios)
 
