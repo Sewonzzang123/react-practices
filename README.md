@@ -12,6 +12,8 @@
 
 ### 6. Performance
 
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/Integration">7. Integration</a>
+
 ### Kanban App
 
 ### Emaillist App

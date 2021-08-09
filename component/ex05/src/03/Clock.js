@@ -23,18 +23,14 @@ export default class Clock extends Component {
         const hours = date.getHours();
         const minutes = date.getMinutes();
         const seconds = date.getSeconds();
-        const session = "am";
-        if (hours > 12) {
-          hours -= 12;
-          session = "pm";
-        }
+
         this.setState({
           hours: `0${hours === 0 ? 12 : hours > 12 ? hours - 12 : hours}`.slice(
             -2
           ),
           minutes: `0${minutes}`.slice(-2),
           seconds: `0${seconds}`.slice(-2),
-          session: session,
+          session: hours > 12 ? "pm" : "am",
         });
       }.bind(this),
       1000
