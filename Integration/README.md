@@ -4,7 +4,7 @@
 
 1. Application Structure
 
-<pre>
+  <pre>
     /app
     |--- /backend
     |       |--- /logging
@@ -34,26 +34,29 @@
     |--- /node_modules
     |--- package.json
     |--- package-lock.json
-</pre>
+  </pre>
 
 package.json : stop 은 window에서는 x
 
 ```json
-  "scripts": {
-    "start": "cross-env NODE_ENV=development node backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
-    "restart": "npm stop && npm start",
-    "stop": "pkill -9 $npm_package_name",
-    "postinstall": "npm run build",
-    "test": "echo 'not yet'",
-    "build": "",
-    "dev:backend": "cross-env NODE_ENV=development nodemon backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name"
+ "scripts": {
+  "start": "cross-env NODE_ENV=development node backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
+  "restart": "npm stop && npm start",
+  "stop": "pkill -9 $npm_package_name",
+  "postinstall": "npm run build",
+  "test": "echo 'not yet'",
+  "build": "",
+  "dev": "concurrently --kill-others \"npm run dev:backend\" \"npm run dev:frontend\" ",
+  "dev:backend": "cross-env NODE_ENV=development nodemon backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
+  "dev:frontend": "cross-env NODE_ENV=development webpack serve --config frontend/config/webpack.config.js --mode development --progress"
   },
 ```
 
-1. nodemon
-2. webpack dev server
-3. package.json
-4. node application
+2. nodemon
+3. webpack dev server
+4. package.json
+5. node application
+6. concurrently : dev:frontend, dev:backend 를 동시에 실행시키려고 설치 (npm i -D concurrently)
 
 ### Application
 
