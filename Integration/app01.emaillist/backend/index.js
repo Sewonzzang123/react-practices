@@ -5,17 +5,22 @@
   const http = require("http");
   const path = require("path");
   const dotenv = require("dotenv");
+  // 1. startup Arguments
+  const argv = require("minimist")(process.argv.slice(2));
 
-  //environment variables(환경변수)
+  // 2. environment variables(환경변수)
   dotenv.config({ path: path.join(__dirname, "./app.config.env") });
 
-  //Application Routers
+  // 3. Process Title(Name)
+  process.title = argv.name;
+
+  // 4. Application Routers
   const { applicationRouter } = require("./routes");
 
-  // Logging
+  // 5. Logging
   const logger = require("./logging");
 
-  // application setup 작업
+  // 6. application setup 작업
   const application = express()
     // 1. session environment
     .use(
@@ -39,10 +44,10 @@
     .set("views", path.join(__dirname, "views"))
     .set("view engine", "ejs");
 
-  // Application Router Setup
+  // 7. Application Router Setup
   applicationRouter.setup(application);
 
-  // server setup
+  // 8. server setup
   http
     .createServer(application)
     .on("listening", function () {

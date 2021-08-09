@@ -15,7 +15,7 @@
     |       |       |--- error.js
     |       |--- /controllers
     |       |--- /models
-  [ |       |--- /public]
+    |       |--- /public
     |       |--- /views
     |       |       |--- /error
     |       |               |--- [404.ejs]
@@ -23,10 +23,32 @@
     |       |--- [index.js]
     |       |--- [app.config.env]
     |--- /frontend
+    |       |--- /config
+    |       |       |--- babel.config.json
+    |       |       |--- [webpack.config.json]
+    |       |--- /public
+    |       |       |--- favicon.ico
+    |       |       |--- index.html
+    |       |--- /src
+    |       |--- /assets
     |--- /node_modules
     |--- package.json
     |--- package-lock.json
 </pre>
+
+package.json : stop 은 window에서는 x
+
+```json
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
+    "restart": "npm stop && npm start",
+    "stop": "pkill -9 $npm_package_name",
+    "postinstall": "npm run build",
+    "test": "echo 'not yet'",
+    "build": "",
+    "dev:backend": "cross-env NODE_ENV=development nodemon backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name"
+  },
+```
 
 1. nodemon
 2. webpack dev server
