@@ -1,0 +1,15 @@
+2021-08-09 12:48:14 error: Error: Failed to lookup view "index" in views directory "C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\views"
+    at Function.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\response.js:1012:7)
+    at readAll (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\controllers\emaillist.js:7:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-09 12:50:15 error: Error: Failed to lookup view "index" in views directory "C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\views"
+    at Function.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\response.js:1012:7)
+    at readAll (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\controllers\emaillist.js:7:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-09 12:51:48 error: Error: Failed to lookup view "index" in views directory "C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\views"
+    at Function.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\node_modules\express\lib\response.js:1012:7)
+    at readAll (C:\Users\BIT\Desktop\douzone\douzone2021\vscode-projects\react-practices\Integration\app01.emaillist\backend\controllers\emaillist.js:7:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
