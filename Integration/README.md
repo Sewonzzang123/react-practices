@@ -39,17 +39,33 @@
 package.json : stop 은 window에서는 x
 
 ```json
- "scripts": {
-  "start": "cross-env NODE_ENV=development node backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
-  "restart": "npm stop && npm start",
-  "stop": "pkill -9 $npm_package_name",
-  "postinstall": "npm run build",
-  "test": "echo 'not yet'",
-  "build": "",
-  "dev": "concurrently --kill-others \"npm run dev:backend\" \"npm run dev:frontend\" ",
-  "dev:backend": "cross-env NODE_ENV=development nodemon backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
-  "dev:frontend": "cross-env NODE_ENV=development webpack serve --config frontend/config/webpack.config.js --mode development --progress"
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
+    "restart": "npm stop && npm start",
+    "stop": "pkill -9 $npm_package_name",
+    "postinstall": "npm run build",
+    "test": "echo 'not yet'",
+    "build": "npm run build:frontend",
+    "build:backend": "",
+    "build:frontend": "cross-env NODE_ENV=production webpack --config frontend/config/webpack.config.js --mode production --progress",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --kill-others",
+    "dev:backend": "cross-env NODE_ENV=development nodemon backend/index.js -e js,mjs,json,env --watch backend --name $npm_package_name",
+    "dev:frontend": "cross-env NODE_ENV=development webpack serve --config frontend/config/webpack.config.js --mode development --progress"
   },
+```
+
+webpack.config.js
+
+```json
+ proxy: {
+      "/api": "http://localhost:8888",
+    },
+```
+
+await 가 버전이 높아서 error 가 생김 > polyfil로 async await=>callback으로 바꿔주기
+
+```bash
+ npm i -D @babel/plugin-transform-runtime
 ```
 
 2. nodemon
