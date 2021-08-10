@@ -6,11 +6,11 @@
 
 1. Mount LifeCycle (최초의 컴포넌트가 생성되는 시기)
    - constructor
-   - getDrivedStateFromProps : props로 받아온 값을 state에 동기화 한다.[react v16.3]
+   - getDerivedStateFromProps : props로 받아온 값을 state에 동기화 한다.[react v16.3]
    - render
    - componentDidMount : 컴포넌트 생성을 마치고 첫 렌더링 작업이 끝난 후 (이벤트 등록, 타이머 설정, 네트워크 통신 등 )
 2. Update LifeCycle (DOM이 업데이트 되는순간)
-   - getDrivedStateFromProps
+   - getDerivedStateFromProps
    - shouldComponentUpdate : state이 변경 되었을 때, 렌더링 여부를 결정한다.
    - render
    - getSnapshotBeforeUpdate : render 메소드 호출 후, DOM에 변화를 반영하기 직전에 호출 [react v16.3](update되기 전의 상태를 가지고 있다.)

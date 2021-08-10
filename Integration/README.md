@@ -82,6 +82,10 @@ await 가 버전이 높아서 error 가 생김 > polyfil로 async await=>callbac
    - FrontEnd : React(SPA)
    - AJAX : fetch 기반
 2. App02. Kanban
+   - 개발 통합 설정 (with Node Backend)
+   - backend : Fully APIs(Node Express 기반)
+   - FrontEnd : React(SPA)
+   - AJAX : fetch 기반
 3. App03. Guestbook(node + react)
 4. App04. Gallery(node + react)
 5. mysite(App02 + App03)
