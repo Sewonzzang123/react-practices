@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardList from "./CardList";
-import cards from "./assets/json/data.json";
 import styles from "./assets/css/KanbanBoard.css";
 
 export default function KanbanBoard() {
+  const [cards, setCards] = useState([]);
+
+  useEffect(async () => {
+    try {
+      const response = await fetch("/api/cards", {
+        method: "get",
+        headers: { "Content-Type": "application/json" },
+      });
+      if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+      const json = await response.json();
+      if (json.result !== "success") {
+        throw new Error(`${json.result} ${json.message})`);
+      }
+      setCards(json.data);
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
+
   return (
     <div className={styles.KanbanBoard}>
       <CardList
