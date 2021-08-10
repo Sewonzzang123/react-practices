@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import TaskList from "./TaskList";
 import styles from "./assets/scss/Card.scss";
-export default function Card({ title, description, status, tasks }) {
+export default function Card({
+  title,
+  description,
+  status,
+  tasks,
+  cardNo,
+  notifyTask,
+}) {
   const [showDetails, setShowDetails] = useState(true);
   const styleSideColor = {
     position: "absolute",
@@ -29,7 +36,7 @@ export default function Card({ title, description, status, tasks }) {
       {showDetails ? (
         <div className={styles.Card__Details}>
           {description}
-          <TaskList tasks={tasks} />
+          <TaskList tasks={tasks} notifyTask={notifyTask} cardNo={cardNo} />
         </div>
       ) : (
         ""

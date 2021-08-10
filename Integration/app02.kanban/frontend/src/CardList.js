@@ -3,17 +3,19 @@ import Card from "./Card";
 import PropTypes from "prop-types";
 import styles from "./assets/css/CardList.css";
 
-export default function CardList({ title, cards }) {
+export default function CardList({ title, cards, notifyTask }) {
   return (
     <div className={styles.CardList}>
       <h1>{title}</h1>
       {cards.map((card) => (
         <Card
           key={card.no}
+          cardNo={card.no}
           title={card.title}
           description={card.description}
           status={card.status}
           tasks={card.tasks}
+          notifyTask={notifyTask}
         />
       ))}
     </div>

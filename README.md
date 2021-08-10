@@ -4,7 +4,7 @@
 
 ### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component">2. 컴포넌트 ( Component )</a>
 
-### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/routing">3. 라우팅 ( Routing )</a>
+### 3. 라우팅 ( Routing )
 
 ### 4. Flux: Redux
 

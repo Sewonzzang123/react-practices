@@ -18,14 +18,9 @@ State I - Controlled VS Uncontrolled Component
 State II - Stateful and Pure Component
 State III - Date flow (Data Flow: Down - Top)
 
-### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component/ex04">ex05 : Component Lifecycle + AJAX(fetch, axios)</a>
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component/ex05">ex05 : Component Lifecycle + AJAX(fetch, axios)</a>
 
-### ex01~ ex05 AJAX( fetch, axios)
-
-1. App01. Emaillist(node + react) : React(FrontEnd) Dev integration with Node(Backend)
-2. App02. Guestbook(node + react)
-3. App03. Gallery(node + react)
-4. mysite(App02 + App03)
+### <a href="https://github.com/Sewonzzang123/react-practices/tree/main/component/ex06">ex06 Immutability(불변성) of Component's state </a>
 
 ### Guestbook SPA
 
