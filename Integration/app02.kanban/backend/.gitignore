@@ -1,0 +1,6 @@
+/logs
+/multer-temporary-store
+**/upload-images
+
+**/main.js
+**/bundle.js
