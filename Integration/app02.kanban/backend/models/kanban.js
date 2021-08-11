@@ -15,5 +15,5 @@ module.exports = {
       console.error(err);
     }
   },
-  createTask: async function (task) {},
+  createTask: async function (req, res, next) {},
 };
