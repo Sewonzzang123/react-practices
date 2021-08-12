@@ -1,57 +1,53 @@
-const models = require("../models/Guestbook");
+const models = require("../models");
+const { Op } = require("sequelize");
 
 module.exports = {
   create: async function (req, res, next) {
     try {
-      const data = await models.create(req.body);
+      console.log(req.body);
+      // const result = await models.Guestbook.create(req.body);
       res.status(200).send({
-        // default가 200임
-        data: Object.assign(data, {
-          password: "", // password는 가려야지
-        }),
+        result: "success",
+        data: null,
+        message: null,
       });
-    } catch (error) {
-      next(error);
+    } catch (err) {
+      next(err);
     }
   },
   read: async function (req, res, next) {
     try {
-      const no = req.query.no;
-      let results = await models.findAll(no);
+      const startNo = req.query.sno || 0;
+      const results = await models.Guestbook.findAll({
+        attributes: ["no", "name", "message"],
+        where: startNo > 0 ? { no: { [Op.lt]: startNo } } : {},
+        order: [["no", "desc"]],
+        limit: 3,
+      });
+
       res.status(200).send({
         result: "success",
         data: results,
         message: null,
       });
-    } catch (error) {
-      next(error);
+    } catch (err) {
+      next(err);
     }
   },
   delete: async function (req, res, next) {
     try {
-      const no = req.params.no;
-      const password = req.body.password;
-      const result = await models.destroy({
+      const result = await models.Guestbook.destroy({
         where: {
-          no,
-          password,
+          [Op.and]: [{ no: req.params.no }, { password: req.body.password }],
         },
       });
-      if (result == false) {
-        res.status(200).send({
-          result: "fail",
-          data: null,
-          message: null,
-        });
-        return;
-      }
-      res.status(200).send({
+      res.send({
         result: "success",
-        data: no,
+        data: req.params.no,
         message: null,
       });
-    } catch (error) {
-      next(error);
+    } catch (err) {
+      next(err);
     }
   },
 };

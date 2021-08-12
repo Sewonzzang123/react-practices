@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ex01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Lato", sans-serif;
+        line-height: 1;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      .right-page {
+        background-image: url("./assets/image/image.jpg");
+        flex-grow: 0;
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+      }
+      form {
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .left-container {
+        margin: 64px 32px;
+      }
+      .logo-image {
+        background-image: url("./assets/image/logo.jpg");
+      }
+      .links div {
+        margin: 1em auto;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      .links a {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

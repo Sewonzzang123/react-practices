@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Guestbook from "./Guestbook";
+import GuestbookApp from "./GuestbookApp";
 import "./assets/css/App.css";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className={"App"}>
       <div>
-        <Guestbook />
+        <GuestbookApp />
       </div>
     </div>
   );
