@@ -50,6 +50,8 @@ export default function Guestbook() {
     },
     add: async (Guestbookvo) => {
       try {
+        setGuestbookvo(Guestbookvo);
+        console.log(JSON.stringify(Guestbookvo));
         const response = await fetch("/api", {
           method: "post",
           mode: "same-origin",
