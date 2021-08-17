@@ -1,6 +1,7 @@
 (function() {
     const express = require('express');
     const session = require('express-session');
+    const multer = require('multer');
     const http = require('http');
     const path = require('path');
     const dotenv = require('dotenv');
@@ -24,16 +25,18 @@
     const application = express()
         // 6-1. Session Environment
         .use(session({
-            secret: 'emaillist-session',
+            secret: 'gallery-session',
             resave: false,
             saveUninitialized: false
         }))
         // 6-2. Body Parsers
         .use(express.json())
         .use(express.urlencoded({extended: true}))
-        // 6-3. Static
+        // 6-3. Multer
+        .use(multer({dest: path.join(__dirname, process.env.MULTER_TEMPORARY_STORE)}).single('file'))
+        // 6-4. Static
         .use(express.static(path.join(__dirname, process.env.STATIC_RESOURCES_DIRECTORY)))
-        // 6-4. View Engine Setup
+        // 6-5. View Engine Setup
         .set('views', path.join(__dirname, 'views'))
         .set('view engine', 'ejs');
 

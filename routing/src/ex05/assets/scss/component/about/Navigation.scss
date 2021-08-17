@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+nav.About {
+  text-align: center;
+  margin-top: 10px;
+
+  span {
+    padding: 0 5px;
+    &::before {
+      content: "|";
+    }
+  }
+
+  a {
+    color: #4f4f4f;
+    font-weight: bold;
+
+    font-size: 1.1em;
+    text-decoration: none;
+
+    &:hover {
+      color: #4f4f4f;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: #4f4f4f;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #4f4f4f;
+      text-decoration: none;
+    }
+  }
+
+  :global(a.active) {
+    color: green;
+    text-decoration: underline;
+  }
+}
