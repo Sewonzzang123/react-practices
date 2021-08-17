@@ -5,9 +5,7 @@ export default class App extends Component {
   render() {
     return (
       <div id="App">
-        <div className="mainpage-wrapper">
-          <MainPage />
-        </div>
+        <MainPage />
       </div>
     );
   }
