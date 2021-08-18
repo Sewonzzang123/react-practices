@@ -28,28 +28,18 @@ export default function MainPage() {
                   className="id-input"
                   label="아이디"
                   variant="outlined"
-                  size="normal"
+                  size="medium"
                 />
               </div>
               <div className="password">
                 <TextField
                   id="outlined-basic"
                   className="password-input"
+                  type="password"
                   label="패스워드"
                   variant="outlined"
-                  size="normal"
+                  size="medium"
                 />
-              </div>
-              <div className="login-button">
-                {/* <Button
-                  type="submit"
-                  className="login-btn"
-                  variant="outlined"
-                  color="primary"
-                >
-                  Primary
-                </Button> 
-                */}
               </div>
 
               <div className="login-button">
@@ -57,17 +47,20 @@ export default function MainPage() {
                   className="login-btn"
                   variant="contained"
                   color="primary"
+                  size="large"
                 >
-                  Primary
+                  로그인
                 </Button>
               </div>
             </form>
           </div>
           <div className="non-members">
-            <span>비회원으로 시작하기</span>
+            <span>
+              <a href="#">비회원으로 시작하기</a>
+            </span>
           </div>
           <div className="links">
-            {/* <ul>
+            <ul>
               <li>
                 <a href="#">아이디 찾기</a>
               </li>
@@ -75,16 +68,10 @@ export default function MainPage() {
               <li>
                 <a href="#"> 비밀번호 찾기</a>
               </li>
-            </ul> 
+            </ul>
             <a href="#" className="member_join">
               회원가입
             </a>
-            */}
-            <Button color="primary">아이디 찾기</Button>
-            <Button variant="contained" color="primary">
-              비밀번호 찾기
-            </Button>
-            <Button>회원가입</Button>
           </div>
         </div>
       </div>
