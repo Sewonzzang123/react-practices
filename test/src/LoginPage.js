@@ -7,12 +7,22 @@ import update from "react-addons-update";
 
 export default function LoginPage() {
   const [memberVo, setMemberVo] = useState({ id: "", password: "" });
-  const login = () => console.log(memberVo);
+  const [loginFail, setLoginFail] = useState(false);
+
+  const login = (e) => {
+    e.preventDefault();
+
+    // console.log(JSON.stringify(memberVo));
+    // 성공하면 옆으로...
+    // e.target.classList.add("Move");
+    // 틀렸을 경우에
+    setLoginFail(true);
+    setMemberVo(update(memberVo, { password: { $set: "" } }));
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setMemberVo(update(memberVo, { [name]: { $set: value } }));
-    console.log(memberVo);
   };
 
   return (
@@ -31,7 +41,12 @@ export default function LoginPage() {
                 </a>
               </div>
             </div>
-            <LoginForm handleChange={handleChange} />
+            <LoginForm
+              handleChange={handleChange}
+              memberVo={memberVo}
+              login={login}
+              loginFail={loginFail}
+            />
             <NonMembers />
             <Links />
           </div>

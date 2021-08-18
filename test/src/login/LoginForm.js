@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import styles from "../assets/scss/login/LoginForm.scss";
 
-export default function LoginForm({ handleChange }) {
-  const [memberVo, setMemberVo] = useState({ id: "", password: "" });
-
+export default function LoginForm({
+  handleChange,
+  memberVo,
+  login,
+  loginFail,
+}) {
   return (
     <div className={styles.LoginForm}>
       <div className={styles.Message}>
@@ -14,7 +17,7 @@ export default function LoginForm({ handleChange }) {
           <span>로그인을 통해 mehago를 이용해 보세요.</span>
         </div>
       </div>
-      <form onSubmit="handleSubmit">
+      <form onSubmit={login}>
         <div className={styles.Id}>
           <TextField
             id="outlined-basic"
@@ -25,6 +28,7 @@ export default function LoginForm({ handleChange }) {
             size="medium"
             autoComplete="off"
             name="id"
+            value={memberVo.id}
             onChange={(e) => handleChange(e)}
           />
         </div>
@@ -37,10 +41,17 @@ export default function LoginForm({ handleChange }) {
             variant="outlined"
             size="medium"
             name="password"
+            value={memberVo.password}
             onChange={(e) => handleChange(e)}
           />
         </div>
-
+        {loginFail === false ? (
+          ""
+        ) : (
+          <div className={styles.LoginFail} name="loginFail">
+            <span>가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.</span>
+          </div>
+        )}
         <div className={styles.LoginButton}>
           <Button
             className={styles.LoginBtn}
