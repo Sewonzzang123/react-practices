@@ -4,20 +4,40 @@ import NonMembers from "./login/NonMembers";
 import LoginForm from "./login/LoginForm";
 import styles from "./assets/scss/LoginPage.scss";
 import update from "react-addons-update";
+import axios from "axios";
 
 export default function LoginPage() {
   const [memberVo, setMemberVo] = useState({ id: "", password: "" });
   const [loginFail, setLoginFail] = useState(false);
 
-  const login = (e) => {
+  const login = async (e) => {
     e.preventDefault();
+    try {
+      console.log(JSON.stringify(memberVo));
+      // const response = await fetch(`/spring/account/api/login`, {
+      //   method: "post",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     Accept: "applcation/json",
+      //   },
+      //   body: JSON.stringify(memberVo),
+      // });
+      axios
+        .post("/spring/account/api/login", memberVo, { headers: {} })
+        .then((res) => {
+          if (res.data.result == "success") {
+            console.log("와!");
+          }
+        });
+      // 성공하면 옆으로...
 
-    // console.log(JSON.stringify(memberVo));
-    // 성공하면 옆으로...
-    // e.target.classList.add("Move");
-    // 틀렸을 경우에
-    setLoginFail(true);
-    setMemberVo(update(memberVo, { password: { $set: "" } }));
+      // e.target.classList.add("Move");
+      // 틀렸을 경우에
+      setLoginFail(true);
+      setMemberVo(update(memberVo, { password: { $set: "" } }));
+    } catch (err) {
+      next(err);
+    }
   };
 
   const handleChange = (e) => {
