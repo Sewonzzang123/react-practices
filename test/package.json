@@ -21,6 +21,7 @@
     "file-loader": "^6.2.0",
     "image-loader": "0.0.1",
     "prop-types": "^15.7.2",
+    "react-addons-update": "^15.6.3",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "web-vitals": "^2.1.0",
@@ -31,6 +32,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

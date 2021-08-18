@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import MainPage from "./MainPage";
+import LoginPage from "./LoginPage";
 
 export default class App extends Component {
   render() {
     return (
       <div id="App">
-        <div className="mainpage-wrapper">
-          <MainPage />
-        </div>
+        <LoginPage />
       </div>
     );
   }
