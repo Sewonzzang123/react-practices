@@ -41,7 +41,6 @@ export default function MainPage() {
                 />
               </div>
               <div className="login-button">
-
                 {/* <Button
                   type="submit"
                   className="login-btn"
@@ -50,8 +49,9 @@ export default function MainPage() {
                 >
                   Primary
                 </Button> 
+                */}
               </div>
-              */}
+
               <div className="login-button">
                 <Button
                   className="login-btn"
